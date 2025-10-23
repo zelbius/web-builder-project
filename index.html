@@ -1,0 +1,289 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Marci Metzger Homes — Real Estate Agent, Real Estate, Realtor (Homepage Revamp)</title>
+  <meta name="description" content="Marci Metzger — Trusted Pahrump Realtor. Buy or sell with confidence. View listings, read testimonials, and contact Marci today." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display + Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased text-gray-900 bg-cream">
+  <!-- Sticky header -->
+  <header id="site-header" class="fixed w-full z-40 transition-all">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex items-center justify-between h-13">
+        <!-- Logo Banner -->
+        <a href="#hero" class="flex items-center space-x-3">
+          <img src="images/marci-logo.jpg" alt="Marci Metzger Logo" class="h-10 md:h-12 object-contain">
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-6">
+          <a href="#about" class="hover:text-[#b6914f] transition">About</a>
+          <a href="#listings" class="hover:text-[#b6914f] transition">Listings</a>
+          <a href="#affiliations" class="hover:text-[#b6914f] transition">Affiliations</a>
+          <a href="#contact" class="hover:text-[#b6914f] transition">Contact</a>
+        </nav>
+
+        <div class="md:hidden">
+          <button id="mobileBtn" aria-label="Toggle menu" class="p-2 rounded-md focus:ring-2 focus:ring-amber-400">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+      <nav class="flex flex-col p-4">
+      <a href="#about" class="hover:text-[#b6914f] transition">About</a>
+      <a href="#listings" class="hover:text-[#b6914f] transition">Listings</a>
+      <a href="#affiliations" class="hover:text-[#b6914f] transition">Affiliations</a>
+      <a href="#contact" class="hover:text-[#b6914f] transition">Contact</a>
+    </nav>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="hero" class="min-h-[68vh] flex items-center hero-bg">
+      <div class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="text-white">
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">Your Trusted Realtor in Pahrump, Nevada</h2>
+          <p class="mt-4 text-lg sm:text-xl max-w-xl">Helping families buy and sell homes with confidence for nearly three decades. Local expertise, personalized service.</p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#listings" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gold text-white font-semibold shadow hover:opacity-95">View Listings</a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-white/40 bg-white/10 text-white font-medium">Contact Marci</a>
+          </div>
+
+          <div class="mt-6 text-sm text-white/90">
+            <span class="inline-flex items-center">📍 Serving Pahrump &amp; Nye County &nbsp;•&nbsp; Licensed Realtor</span>
+          </div>
+        </div>
+
+        <aside class="bg-white rounded-2xl p-6 shadow-lg glass">
+          <h3 class="text-xl font-semibold text-gray-800">Quick Contact</h3>
+          <p class="text-sm text-gray-600 mt-1">Call or send a message — available for consultations.</p>
+          <div class="mt-4 space-y-3">
+            <a href="tel:+17025551234" class="block w-full text-center px-4 py-3 rounded-lg bg-gold text-white font-medium">Call (702) 555-1234</a>
+            <a href="mailto:marci@example.com" class="block w-full text-center px-4 py-3 rounded-lg border border-gray-200">Email Marci</a>
+          </div>
+
+          <form action="#" class="mt-4 space-y-3" aria-label="Quick contact form">
+            <div>
+              <label class="sr-only">Name</label>
+              <input type="text" name="name" placeholder="Your name" class="w-full rounded-md border px-3 py-2" />
+            </div>
+            <div>
+              <label class="sr-only">Phone</label>
+              <input type="tel" name="phone" placeholder="Phone" class="w-full rounded-md border px-3 py-2" />
+            </div>
+            <div>
+              <label class="sr-only">Message</label>
+              <textarea name="message" rows="2" placeholder="Message" class="w-full rounded-md border px-3 py-2"></textarea>
+            </div>
+            <div>
+              <button type="submit" class="w-full rounded-md px-4 py-2 bg-amber-600 text-white font-medium">Send Message</button>
+            </div>
+          </form>
+
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12 fade-up">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-playfair">About Marci</h3>
+          <p class="mt-3 text-gray-700">Marci Metzger is a seasoned real estate professional serving Pahrump and the surrounding communities. With nearly three decades in the industry, Marci brings deep local knowledge, strong negotiation skills, and a client-first approach to every sale. Her commitment to personalized service and results has earned her the trust of buyers and sellers across Nye County.</p>
+
+          <p class="mt-3 text-gray-700">Whether you're buying your first home or selling a family property, Marci focuses on clear communication and a smooth process — from pricing strategy to closing day.</p>
+
+          <a href="#contact" class="inline-flex items-center mt-4 px-5 py-3 rounded-full bg-gold text-white font-medium">Schedule a Consultation</a>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+          <img src="images/marci-portrait.jpg" alt="Marci Metzger portrait" class="w-48 h-48 object-cover rounded-lg shadow-md" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings / Gallery -->
+    <section id="listings" class="max-w-6xl mx-auto px-6 py-12 fade-up">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-playfair">Featured Listings</h3>
+        <a href="#" class="text-sm text-gold">View all listings →</a>
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="listing-card">
+          <img src="images/home1.jpg" alt="Listing 1" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4 bg-white rounded-b-lg border-t">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="font-semibold">Charming 3‑Bed Family Home</h4>
+                <p class="text-sm text-gray-500">Pahrump — 1,850 sqft • 3 bed • 2 bath</p>
+              </div>
+              <div class="text-gold font-bold">$289,000</div>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Updated kitchen, large backyard, close to schools. Contact for a private showing.</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="text-sm px-3 py-2 rounded-md border">View Details</a>
+              <a href="tel:+17025551234" class="text-sm px-3 py-2 rounded-md bg-gold text-white">Call Agent</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="listing-card">
+          <img src="images/home2.jpg" alt="Listing 2" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4 bg-white rounded-b-lg border-t">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="font-semibold">Modern Condo Close to Town</h4>
+                <p class="text-sm text-gray-500">Pahrump — 980 sqft • 2 bed • 1 bath</p>
+              </div>
+              <div class="text-gold font-bold">$179,900</div>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Low HOA, move-in ready. Great rental potential.</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="text-sm px-3 py-2 rounded-md border">View Details</a>
+              <a href="tel:+17025551234" class="text-sm px-3 py-2 rounded-md bg-gold text-white">Call Agent</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="listing-card">
+          <img src="images/home3.jpg" alt="Listing 3" class="w-full h-48 object-cover rounded-t-lg" />
+          <div class="p-4 bg-white rounded-b-lg border-t">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="font-semibold">Country Retreat on Large Lot</h4>
+                <p class="text-sm text-gray-500">Nye County — 2,450 sqft • 4 bed • 3 bath</p>
+              </div>
+              <div class="text-gold font-bold">$349,000</div>
+            </div>
+            <p class="mt-3 text-sm text-gray-600">Spacious property with mountain views and workshop.</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" class="text-sm px-3 py-2 rounded-md border">View Details</a>
+              <a href="tel:+17025551234" class="text-sm px-3 py-2 rounded-md bg-gold text-white">Call Agent</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-white border-t border-b py-12 fade-up">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-2xl font-playfair">Real Estate Done Right</h3>
+        <p class="mt-2 text-gray-600">Full-service residential &amp; commercial real estate support — from market analysis to closing.</p>
+
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 rounded-lg border">
+            <h4 class="font-semibold">Residential Sales</h4>
+            <p class="mt-2 text-sm text-gray-600">Staging advice, pricing strategy, and local marketing to sell quickly and at the right price.</p>
+          </div>
+          <div class="p-6 rounded-lg border">
+            <h4 class="font-semibold">Buyers Representation</h4>
+            <p class="mt-2 text-sm text-gray-600">Guidance through search, inspections, negotiations, and closing — making buying simpler.</p>
+          </div>
+          <div class="p-6 rounded-lg border">
+            <h4 class="font-semibold">Commercial &amp; Investment</h4>
+            <p class="mt-2 text-sm text-gray-600">Local market insight for investors and commercial property owners.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="max-w-6xl mx-auto px-6 py-12 fade-up">
+      <h3 class="text-2xl font-playfair">What Clients Say</h3>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <blockquote class="p-6 bg-white rounded-lg border">
+          <p class="text-gray-700">"Marci helped us sell our home in under two weeks — professional, thoughtful, and always reachable."</p>
+          <footer class="mt-4 text-sm text-gray-600">— Sarah P., Pahrump</footer>
+        </blockquote>
+
+        <blockquote class="p-6 bg-white rounded-lg border">
+          <p class="text-gray-700">"We moved from out of state and Marci handled everything. We felt supported every step of the way."</p>
+          <footer class="mt-4 text-sm text-gray-600">— Daniel R., Nye County</footer>
+        </blockquote>
+
+        <blockquote class="p-6 bg-white rounded-lg border">
+          <p class="text-gray-700">"Excellent market knowledge and a great communicator — highly recommended."</p>
+          <footer class="mt-4 text-sm text-gray-600">— Mia K., Pahrump</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Affiliations / Organizations -->
+    <section id="affiliations" class="bg-white py-12 border-t border-[#e6d8b9]">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-2xl font-serif text-[#b6914f] mb-6">Proud Member Of</h2>
+        <div class="flex flex-wrap justify-center items-center gap-10">
+          <img src="images/ridge-logo.jpg" alt="The Ridge Realty Group Logo" class="h-14 object-contain grayscale hover:grayscale-0 transition">
+          <img src="images/realtor-logo.jpg" alt="Realtor Logo" class="h-14 object-contain grayscale hover:grayscale-0 transition">
+          <img src="images/equal-housing-logo.jpg" alt="Equal Housing Opportunity Logo" class="h-14 object-contain grayscale hover:grayscale-0 transition">
+          <img src="images/pahrump-chamber-logo.jpg" alt="Pahrump Valley Chamber of Commerce Logo" class="h-14 object-contain grayscale hover:grayscale-0 transition">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="bg-amber-50 py-12 fade-up">
+      <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h3 class="text-2xl font-playfair">Ready to buy or sell in Pahrump?</h3>
+          <p class="mt-2 text-gray-700">Call (702) 555-1234 or send a message — Marci will respond promptly to set up a consultation.</p>
+          <div class="mt-4 flex gap-3">
+            <a href="tel:+17025551234" class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gold text-white font-semibold">Call Now</a>
+            <a href="mailto:marci@example.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border">Email</a>
+          </div>
+        </div>
+
+        <form action="#" class="bg-white p-6 rounded-xl shadow">
+          <div class="grid grid-cols-1 gap-3">
+            <label class="sr-only">Name</label>
+            <input type="text" placeholder="Your name" class="w-full rounded-md border px-3 py-2" />
+            <label class="sr-only">Email</label>
+            <input type="email" placeholder="Email" class="w-full rounded-md border px-3 py-2" />
+            <label class="sr-only">Phone</label>
+            <input type="tel" placeholder="Phone" class="w-full rounded-md border px-3 py-2" />
+            <label class="sr-only">Message</label>
+            <textarea rows="3" placeholder="How can I help?" class="w-full rounded-md border px-3 py-2"></textarea>
+            <button class="mt-2 w-full rounded-md px-4 py-2 bg-gold text-white font-medium">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-6">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="text-sm text-gray-600">© <span id="year"></span> Marci Metzger — The Ridge Realty Group • Pahrump, NV</div>
+        <div class="flex items-center gap-4">
+          <a href="#" aria-label="Facebook" class="text-gray-600 hover:text-gold">FB</a>
+          <a href="#" aria-label="Instagram" class="text-gray-600 hover:text-gold">IG</a>
+          <a href="#" aria-label="LinkedIn" class="text-gray-600 hover:text-gold">IN</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
